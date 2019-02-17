@@ -190,8 +190,6 @@ export function validateFormFields(fields) {
     return validatedFields;
   }, {});
 
-  console.log(valid, fields);
-
   return { valid, fields };
 }
 

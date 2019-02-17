@@ -29,15 +29,16 @@ export default function reducer(
 
       state = { ...state, ...validateFormFields(state.fields) };
 
-      break;
+      return state;
 
     case ACTION_SUBMIT_FORM:
       state = { ...state, fields: touchFormFields(state.fields) };
       state = { ...state, ...validateFormFields(state.fields) };
       state = { ...state, submitted: state.valid };
 
-      break;
-  }
+      return state;
 
-  return state;
+    default:
+      return state;
+  }
 }
