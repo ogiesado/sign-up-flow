@@ -1,0 +1,18 @@
+@import 'vars';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0 0 0;
+  min-height: calc(100vh - #{$header-height});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://uploads.codesandbox.io/uploads/user/749f85be-6327-4dc9-9df3-2c1550bab392/bSdg-OFC16_Cafe_018_1600.png);
+}
